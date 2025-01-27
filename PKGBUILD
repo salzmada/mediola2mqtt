@@ -3,11 +3,11 @@ pkgver=r18.7bfbad8
 pkgrel=1
 pkgdesc="Simple Mediola to MQTT bridge"
 arch=('any')
-url="https://github.com/andyboeh/mediola2mqtt"
+url="https://github.com/salzmada/mediola2mqtt"
 license=('GPL')
 depends=('python' 'python-paho-mqtt' 'python-requests')
 install='mediola2mqtt.install'
-source=('mediola2mqtt-git::git+https://github.com/andyboeh/mediola2mqtt.git'
+source=('mediola2mqtt-git::git+https://github.com/salzmada/mediola2mqtt.git'
         'mediola2mqtt.install'
         'mediola2mqtt.sysusers'
         'mediola2mqtt.service')
