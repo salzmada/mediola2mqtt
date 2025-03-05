@@ -67,21 +67,21 @@ def on_message(client, obj, msg):
                 if dtype == 'RT':
                     data = "20" + adr
                 elif dtype == 'ER':
-                    data = format(int(adr, 16), "02x") + "01"
+                    data = format(int(adr), "02x") + "01"
                 else:
                     return
             elif msg.payload == b'close':
                 if dtype == 'RT':
                     data = "40" + adr
                 elif dtype == 'ER':
-                    data = format(int(adr, 16), "02x") + "00"
+                    data = format(int(adr), "02x") + "00"
                 else:
                     return
             elif msg.payload == b'stop':
                 if dtype == 'RT':
                     data = "10" + adr
                 elif dtype == 'ER':
-                    data = format(int(adr, 16), "02x") + "02"
+                    data = format(int(adr), "02x") + "02"
                 else:
                     return
             else:
